@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MyRoutes from "./Routes";
+import MyRoutes from "./routes";
 import logo from "./logo.svg";
 import "./App.css";
 import { ThemeProvider } from "./theme/ThemeProvider";
