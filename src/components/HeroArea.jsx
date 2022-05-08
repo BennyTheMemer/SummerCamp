@@ -1,5 +1,6 @@
-import { Flex, Text, Heading, chakra, Button } from "@chakra-ui/react";
+import { Flex, Text, Heading, chakra, Button, Image } from "@chakra-ui/react";
 import background from "../static/background.jpg";
+import SummerCamp from "../static/removed-bg-image.png";
 
 export default function HeroArea() {
   return (
@@ -15,15 +16,11 @@ export default function HeroArea() {
     >
       <Flex mt="12%" w={["95%", "95%", "60%", "65%", "60%"]}>
         <Flex w="40rem" flexDirection="column">
-          <Heading fontSize="5rem">
-            Verão em <chakra.span color="red.500">AP</chakra.span>
-          </Heading>
-          <Text fontWeight="600" fontSize="4xl" color="blue.300">
-            Summer Camp
-          </Text>
-          <Text fontSize="2xl" fontWeight="500">
-            Se o teu moto é work hard play harder viemos-te trazer o melhor dos
-            dois mundos
+          <Image h="200px" src={SummerCamp} />
+          <Text mt="3rem" fontSize="2xl" fontWeight="500">
+            Se o teu moto é{" "}
+            <chakra.span as={"i"}>work hard play harder</chakra.span> viemos-te
+            trazer o melhor dos dois mundos
           </Text>
           <Button
             border="1px solid"

@@ -1,5 +1,6 @@
-import { Flex, Box, Text, Heading } from "@chakra-ui/react";
+import { Flex, Box, Text, Heading, Avatar } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
+import logo from "../static/Logo.jpeg";
 
 export default function Navbar() {
   let routes = [
@@ -25,21 +26,27 @@ export default function Navbar() {
     <Flex
       h="10vh"
       w="100%"
-      bg="red.500"
-      color="white"
+      color="black"
+      borderBottom="1px solid"
+      borderColor="red.500"
       justify="center"
       align="center"
       display={["none", "none", "none", "flex"]}
     >
       <Box w={["", "", "", "65%", "60%"]}>
         <Flex align="center" justify="space-between">
-          <Heading color="black">SummerCamp</Heading>
+          <Avatar
+            border="1px solid red"
+            mt="6rem"
+            h="12rem"
+            w="12rem"
+            src={logo}
+          />
 
           {routes.map((route) => (
             <NavLink
               to={route.path}
               style={{
-                color: "white",
                 textDecoration: "none",
               }}
             >

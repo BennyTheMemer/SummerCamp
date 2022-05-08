@@ -99,7 +99,14 @@ export default function Home() {
               <Wrap
                 mt="2%"
                 spacing="15px"
-                justify={["center", , , , "space-between"]}
+                justify={[
+                  "center",
+                  "center",
+                  "center",
+                  "center",
+                  "center",
+                  "space-between",
+                ]}
               >
                 {plans.map((plan) => (
                   <PackCard plan={plan} />
@@ -119,6 +126,8 @@ export default function Home() {
                     w="120px"
                     src={sponser.logo}
                     alt={sponser.name}
+                    filter="grayscale(100%)"
+                    _hover={{ filter: "none" }}
                   />
                 </a>
               </WrapItem>
