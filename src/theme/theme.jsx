@@ -2,10 +2,6 @@ import { border, extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
 const themeConfig = {
-  fonts: {
-    heading: "Roboto, sans-serif",
-    body: "Roboto, sans-serif",
-  },
   colors: {
     gray: {
       100: "#FBFBFB",
@@ -19,18 +15,18 @@ const themeConfig = {
       500: "#ABCE30",
       400: "#8AC630",
       300: "#6ABB2F",
-      200: "#4BAB2D",
+      200: "#4BAB2D", //rgba(75, 171, 45, 1)
       100: "#2A9B2B",
     },
     orange: {
-      500: "#FD8D04",
+      500: "#FD8D04", //rgba(253, 141, 4, 1)
       400: "#FDAE00",
       300: "#FDC400",
       200: "#FDEA33",
       100: "#FDF9C4",
     },
     red: {
-      500: "#FA1A0D",
+      500: "#FA1A0D", //rgba(250, 26, 13, 1)
       600: "#D0021B",
       700: "#A90C15",
       800: "#8C0B1A",
@@ -50,7 +46,7 @@ const themeConfig = {
   styles: {
     global: (props) => ({
       body: {
-        bg: "blue.100",
+        bg: "gray.100",
       },
     }),
   },
