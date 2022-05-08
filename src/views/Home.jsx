@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { HeroArea, Navbar, PackCard } from "../components";
 import { useState } from "react";
-import SuperBock from "../static/Super_Bock.png";
+import SuperBock from "../static/Super_bock.png";
 import CP from "../static/CP.png";
 
 export default function Home() {
