@@ -12,10 +12,18 @@ import {
   Button,
   Avatar,
 } from "@chakra-ui/react";
-import { HeroArea, Navbar, PackCard } from "../components";
+import {
+  HeroArea,
+  Navbar,
+  PackCard,
+  SocialMedia,
+  HamburguerMenu,
+} from "../components";
 import { useState } from "react";
 import SuperBock from "../static/Super_bock.png";
 import CP from "../static/CP.png";
+import londrina from "../static/Londrina.png";
+import OhMy from "../static/OhMy.jpg";
 
 export default function Home() {
   const [plans, setPlans] = useState([
@@ -82,18 +90,32 @@ export default function Home() {
       logo: CP,
       link: "https://www.cp.pt/",
     },
+    {
+      id: 3,
+      name: "Londrina",
+      logo: londrina,
+      link: "https://www.facebook.com/tabernalondrina/",
+    },
+    {
+      id: 4,
+      name: "Oh My",
+      logo: OhMy,
+      link: "https://www.ohmysnacks.pt/",
+    },
   ];
 
   return (
     <Flex flexDirection="column">
       <Navbar />
+
       <HeroArea />
+      <SocialMedia />
       <Flex w="100%" justify="center">
         <Flex flexDirection="column" w={["95%", "95%", "60%", "65%", "60%"]}>
           <Flex align="center" w="100%" justify="center">
             <Box mt="5%" w="100%">
               <Box>
-                <Heading> Os nosso packs</Heading>
+                <Heading color="black"> Os nosso packs</Heading>
                 <Box mt="10px" bg="blue.200" h="2px" w="100%" />
               </Box>
               <Wrap
@@ -114,10 +136,12 @@ export default function Home() {
               </Wrap>
             </Box>
           </Flex>
-          <Heading mt="3%">Patrocinadores</Heading>
+          <Heading color="black" mt="3%">
+            Patrocinadores
+          </Heading>
           <Box mt="10px" bg="blue.200" h="2px" w="100%" />
 
-          <Wrap mt="20px" w="100%" h="200px">
+          <Wrap justify="space-between" mt="20px" w="100%" h="200px">
             {sponsers.map((sponser) => (
               <WrapItem>
                 <a href={sponser.link}>
@@ -127,7 +151,7 @@ export default function Home() {
                     src={sponser.logo}
                     alt={sponser.name}
                     filter="grayscale(100%)"
-                    _hover={{ filter: "none" }}
+                    _hover={{ filter: "none", transition: "0.5s" }}
                   />
                 </a>
               </WrapItem>

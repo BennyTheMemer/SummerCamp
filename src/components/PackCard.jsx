@@ -123,7 +123,7 @@ export default function PackCard({ plan, ...rest }) {
             border="1px solid"
             borderColor="red.500"
             color="black"
-            _hover={{ bg: "red.500", color: "white" }}
+            _hover={{ bg: "red.500", color: "white", transition: "0.4s" }}
           >
             <Text>RESERVAR</Text>
           </Button>

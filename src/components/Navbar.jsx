@@ -37,7 +37,7 @@ export default function Navbar() {
         <Flex align="center" justify="space-between">
           <Avatar
             border="1px solid red"
-            mt="6rem"
+            mt="6.3rem"
             h="12rem"
             w="12rem"
             src={logo}

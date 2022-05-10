@@ -2,6 +2,10 @@ import { border, extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
 const themeConfig = {
+  fonts: {
+    heading: "Roboto, sans-serif",
+    body: "Roboto, sans-serif",
+  },
   colors: {
     gray: {
       100: "#FBFBFB",
